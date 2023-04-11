@@ -1,0 +1,3 @@
+the side bar as sidebar . php include
+inbox page
+profile page
