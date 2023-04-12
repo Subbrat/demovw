@@ -1,6 +1,6 @@
 <?php
-include 'dbconn.php';
-include_once('./includes/inc.php');
+include './../includes/dbconn.php';
+include_once('./../includes/inc.php');
 // Fetch data from batches table
 $batches_query = "SELECT * FROM batches";
 $batches_result = mysqli_query($conn, $batches_query);
