@@ -4,6 +4,50 @@
 <head>
     <?php
     include_once('./includes/inc.php'); ?>
+    <style>
+    .calendar-container {
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+    }
+
+    .calendar-header {
+        background-color: #eee;
+        padding: 6px 10px;
+    }
+
+    .calendar-title {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .calendar {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .day-header {
+        padding: 4px;
+        text-align: center;
+    }
+
+    .day {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .day:hover {
+        background-color: #eee;
+    }
+
+    .day.disabled {
+        color: #ccc;
+    }
+    </style>
 </head>
 
 <body class="s-light-grey">
@@ -17,8 +61,85 @@
         <!-- Header -->
         <header class="s-container" style="padding-top:22px">
             <h5><b>Dashboard -</b></h5>
+            <select name="options">
+                <option value="" selected disabled>Select an instrument</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+
+
+
         </header>
-        <div class="s-row-padding s-margin-bottom">
+        <div class="s-center">
+
+            <div class="calendar-container s-center">
+                <div class="calendar-header">
+                    <div class="calendar-title">April 2023</div>
+                </div>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+                            <th class="day-header">Sun</th>
+                            <th class="day-header">Mon</th>
+                            <th class="day-header">Tue</th>
+                            <th class="day-header">Wed</th>
+                            <th class="day-header">Thu</th>
+                            <th class="day-header">Fri</th>
+                            <th class="day-header">Sat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="day disabled"></td>
+                            <td class="day disabled"></td>
+                            <td class="day">1</td>
+                            <td class="day">2</td>
+                            <td class="day">3</td>
+                            <td class="day">4</td>
+                            <td class="day">5</td>
+                        </tr>
+                        <tr>
+                            <td class="day">6</td>
+                            <td class="day">7</td>
+                            <td class="day">8</td>
+                            <td class="day">9</td>
+                            <td class="day">10</td>
+                            <td class="day">11</td>
+                            <td class="day">12</td>
+                        </tr>
+                        <tr>
+                            <td class="day">13</td>
+                            <td class="day">14</td>
+                            <td class="day">15</td>
+                            <td class="day">16</td>
+                            <td class="day">17</td>
+                            <td class="day">18</td>
+                            <td class="day">19</td>
+                        </tr>
+                        <tr>
+                            <td class="day">20</td>
+                            <td class="day">21</td>
+                            <td class="day">22</td>
+                            <td class="day">23</td>
+                            <td class="day">24</td>
+                            <td class="day">25</td>
+                            <td class="day">26</td>
+                        </tr>
+                        <tr>
+                            <td class="day">27</td>
+                            <td class="day">28</td>
+                            <td class="day">29</td>
+                            <td class="day">30</td>
+                            <td class="day disabled"></td>
+                            <td class="day disabled"></td>
+                            <td class="day disabled"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- <div class="s-row-padding s-margin-bottom">
             <div class="s-quarter">
                 <div class="s-container s-red s-padding-16">
                     <div class="s-left"><i class="fa fa-comment s-xxxlarge"></i></div>
@@ -59,18 +180,18 @@
                     <h4>Users</h4>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="s-panel">
             <div class="s-row-padding" style="margin:0 -16px">
                 <div class="s-third s-border s-center">
-                    <h5 class="s-left">Regions</h5>
+                    <h5 class="s-left">Recent additions</h5>
                     <img src="./assets/204.png" style="width:100%" alt="Google Regional Map">
                     <span class="hg">
                         <span class="s-center">any slideshow can be given here</span>
                     </span>
                 </div>
                 <div class="s-twothird">
-                    <h5>Feeds</h5>
+                    <h5>Notifications</h5>
                     <table class="s-table s-striped s-white">
                         <tr>
                             <td><i class="fa fa-user s-text-blue s-large"></i></td>
@@ -111,115 +232,11 @@
                 </div>
             </div>
         </div>
+
         <hr>
-        <div class="s-container">
-            <h5>General Stats</h5>
-            <p>New Visitors</p>
-            <div class="s-grey">
-                <div class="s-container s-center s-padding s-green" style="width:25%">+25%</div>
-            </div>
-            <p>New Users</p>
-            <div class="s-grey">
-                <div class="s-container s-center s-padding s-orange" style="width:50%">50%</div>
-            </div>
-            <p>Bounce Rate</p>
-            <div class="s-grey">
-                <div class="s-container s-center s-padding s-red" style="width:75%">75%</div>
-            </div>
-        </div>
-        <hr>
-        <div class="s-container">
-            <h5>Countries</h5>
-            <table class="s-table s-striped s-bordered s-border s-hoverable s-white">
-                <tr>
-                    <td>United States</td>
-                    <td>65%</td>
-                </tr>
-                <tr>
-                    <td>UK</td>
-                    <td>15.7%</td>
-                </tr>
-                <tr>
-                    <td>Russia</td>
-                    <td>5.6%</td>
-                </tr>
-                <tr>
-                    <td>Spain</td>
-                    <td>2.1%</td>
-                </tr>
-                <tr>
-                    <td>India</td>
-                    <td>1.9%</td>
-                </tr>
-                <tr>
-                    <td>France</td>
-                    <td>1.5%</td>
-                </tr>
-            </table><br>
-            <button class="s-button s-dark-grey">More Countries  <i class="fa fa-arrow-right"></i></button>
-        </div>
-        <hr>
-        <div class="s-container">
-            <h5>Recent Users</h5>
-            <ul class="s-ul s-card-4 s-white">
-                <li class="s-padding-16">
-                    <img src="./assets/avat.png" class="s-left s-circle s-margin-right" style="width:35px">
-                    <span class="s-xlarge">Mike</span><br>
-                </li>
-                <li class="s-padding-16">
-                    <img src="./assets/avat.png" class="s-left s-circle s-margin-right" style="width:35px">
-                    <span class="s-xlarge">Jill</span><br>
-                </li>
-                <li class="s-padding-16">
-                    <img src="./assets/avat.png" class="s-left s-circle s-margin-right" style="width:35px">
-                    <span class="s-xlarge">Jane</span><br>
-                </li>
-            </ul>
-        </div>
-        <hr>
-        <div class="s-container">
-            <h5>Recent Comments</h5>
-            <div class="s-row">
-                <div class="s-col m10 s-container">
-                    <h4>John <span class="s-opacity s-medium">Sep 29, 2014, 9:12 PM</span></h4>
-                    <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur
-                        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                </div>
-            </div>
-            <div class="s-row">
-                <!-- <div class="s-col m2 text-center">
-                    <img class="s-circle" src="/simages/avatar1.png" style="width:96px;height:96px">
-                </div> -->
-                <div class="s-col m10 s-container">
-                    <h4>Bo <span class="s-opacity s-medium">Sep 28, 2014, 10:15 PM</span></h4>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
-                </div>
-            </div>
-        </div>
+
         <br>
-        <div class="s-container s-dark-grey s-padding-32">
-            <div class="s-row">
-                <div class="s-container s-third">
-                    <h5 class="s-bottombar s-border-green">Demographic</h5>
-                    <p>Language</p>
-                    <p>Country</p>
-                    <p>City</p>
-                </div>
-                <div class="s-container s-third">
-                    <h5 class="s-bottombar s-border-red">System</h5>
-                    <p>Browser</p>
-                    <p>OS</p>
-                    <p>More</p>
-                </div>
-                <div class="s-container s-third">
-                    <h5 class="s-bottombar s-border-orange">Target</h5>
-                    <p>Users</p>
-                    <p>Active</p>
-                    <p>Geo</p>
-                    <p>Interests</p>
-                </div>
-            </div>
-        </div>
+
         <!-- Footer -->
         <?php include_once './includes/footer.php'; ?>
         <!-- End page content -->

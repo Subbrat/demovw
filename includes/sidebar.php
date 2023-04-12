@@ -25,16 +25,14 @@ include_once('./includes/inc.php'); ?>
     </div>
     <div class="s-bar-block">
         <a href="#" class="s-bar-item s-button s-padding-16 s-hide-large s-dark-grey s-hover-black" onclick="s_close()"
-            title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            title="close menu"><i class="fa fa-remove fa-fw"></i>Close Menu</a>
         <a href="#" class="s-bar-item s-button s-padding s-blue">Dashboard</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-eye fa-fw"></i>  Views</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+        <a href="#" class="s-bar-item s-button s-padding">Reservations</a>
+        <a href="#" class="s-bar-item s-button s-padding">Payment and Dues</a>
+        <a href="#" class="s-bar-item s-button s-padding">Past reservations</a>
+        <a href="#" class="s-bar-item s-button s-padding">Instrument Catalogue</a>
+        <a href="#" class="s-bar-item s-button s-padding">Test reports</a>
+        <a href="#" class="s-bar-item s-button s-padding">FAQs</a>
     </div>
 </nav>
 <nav class="s-sidebar s-collapse s-white s-animate-left s-border" style="z-index:3;width:300px;" id="mySidebar"><br>
@@ -59,13 +57,10 @@ include_once('./includes/inc.php'); ?>
         <a href="#" class="s-bar-item s-button s-padding-16 s-hide-large s-dark-grey s-hover-black" onclick="s_close()"
             title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
         <a href="#" class="s-bar-item s-button s-padding s-blue">Dashboard</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-eye fa-fw"></i>  Views</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-users fa-fw"></i>  Traffic</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-bullseye fa-fw"></i>  Geo</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-diamond fa-fw"></i>  Orders</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-        <a href="#" class="s-bar-item s-button s-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
-    </div>
+        <a href="#" class="s-bar-item s-button s-padding">Reservations</a>
+        <a href="#" class="s-bar-item s-button s-padding">Payment and Dues</a>
+        <a href="#" class="s-bar-item s-button s-padding">Past reservations</a>
+        <a href="#" class="s-bar-item s-button s-padding">Instrument Catalogue</a>
+        <a href="#" class="s-bar-item s-button s-padding">Test reports</a>
+        <a href="#" class="s-bar-item s-button s-padding">FAQs</a>
 </nav>
