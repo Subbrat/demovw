@@ -96,7 +96,7 @@ if (isset($_POST['delete_dept'])) {
             <td><?php echo $batch_row['id']; ?></td>
             <td><?php echo $batch_row['name']; ?></td>
             <td>
-                <form method="POST">
+                <form method="POST" autocomplete="off">
                     <input type="hidden" name="batch_id" value="<?php echo $batch_row['id']; ?>">
                     <input type="submit" name="delete_batch" value="Delete">
                 </form>
