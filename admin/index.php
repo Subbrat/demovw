@@ -65,8 +65,6 @@
         <div class="s-container">
             <a href="./inst2.php">add new instruments</a><br>
             <a href="./editaccs.php">add or remove batches</a><br>
-            <a href="./editaccs.php">add or remove batches</a><br>
-
         </div>
         <div class="s-center">
         </div>
