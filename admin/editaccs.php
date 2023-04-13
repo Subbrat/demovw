@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 // Include the database connection file
 include('./../includes/dbconn.php');
 // Check if a new column name is submitted

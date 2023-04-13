@@ -27,7 +27,7 @@ include_once('./includes/inc.php'); ?>
         <a href="#" class="s-bar-item s-button s-padding-16 s-hide-large s-dark-grey s-hover-black" onclick="s_close()"
             title="close menu"><i class="fa fa-remove fa-fw"></i>Close Menu</a>
         <a href="#" class="s-bar-item s-button s-padding s-blue">Dashboard</a>
-        <a href="#" class="s-bar-item s-button s-padding">user and batch control</a>
+        <a href="./admin/editaccs.php" class="s-bar-item s-button s-padding">dept and batchcontrol</a>
         <a href="#" class="s-bar-item s-button s-padding">Add instruments</a>
         <a href="#" class="s-bar-item s-button s-padding">Payment and dues </a>
         <a href="#" class="s-bar-item s-button s-padding">Instrument Catalogue</a>
@@ -57,7 +57,7 @@ include_once('./includes/inc.php'); ?>
         <a href="#" class="s-bar-item s-button s-padding-16 s-hide-large s-dark-grey s-hover-black" onclick="s_close()"
             title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
         <a href="#" class="s-bar-item s-button s-padding s-blue">Dashboard</a>
-        <a href="#" class="s-bar-item s-button s-padding">user and batch control</a>
+        <a href="./admin/editaccs.php" class="s-bar-item s-button s-padding">dept and batchcontrol</a>
         <a href="#" class="s-bar-item s-button s-padding">Add instruments</a>
         <a href="#" class="s-bar-item s-button s-padding">Payment and dues </a>
         <a href="#" class="s-bar-item s-button s-padding">Instrument Catalogue</a>
